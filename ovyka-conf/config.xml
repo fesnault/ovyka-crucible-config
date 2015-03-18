@@ -9,35 +9,36 @@ nnrmUUnpvtsrsummmmmUUnpvtsrsummmmmUUFsvhXUUnmm</crucible>
         <fisheye>Disabled</fisheye>
     </license>
     <web-server>
-        <http bind=":8060" />
+        <http bind=":8060"/>
     </web-server>
+    <smtp host="192.168.0.3" from="crucible@ovyka.com" starttls="false" sendEmailsAsActioner="false" debug="false"/>
     <security allow-anon="true" allow-cru-anon="true">
         <built-in>
-            <signup enabled="true" />
+            <signup enabled="true"/>
         </built-in>
         <admins>
-            <system-admins />
+            <system-admins/>
         </admins>
         <avatar>
-            <disabled />
+            <disabled/>
         </avatar>
     </security>
     <repository-defaults>
-        <linker />
-        <allow />
-        <tarball enabled="false" maxFileCount="0" />
+        <linker/>
+        <allow/>
+        <tarball enabled="false" maxFileCount="0"/>
         <security allow-anon="true" allow-logged-in="false">
-            <required-groups />
+            <required-groups/>
         </security>
-        <text-indexer enabled="true" />
-        <watches enabled="true" />
-        <commit-message-syntax syntax="plain" />
-        <changeset-discussions enabled="true" />
+        <text-indexer enabled="true"/>
+        <watches enabled="true"/>
+        <commit-message-syntax syntax="plain"/>
+        <changeset-discussions enabled="true"/>
         <show-checkout-url>true</show-checkout-url>
     </repository-defaults>
-    <check-for-updates />
+    <check-for-updates/>
     <database type="postgresql">
-        <connection dialect="org.hibernate.dialect.PostgreSQLDialect" driver="org.postgresql.Driver" jdbcurl="jdbc:postgresql://db:5432/crucible" password="crucible" username="crucible" maxPoolSize="20" minPoolSize="5" driverSource="bundled" />
+        <connection dialect="org.hibernate.dialect.PostgreSQLDialect" driver="org.postgresql.Driver" jdbcurl="jdbc:postgresql://db:5432/crucible" password="crucible" username="crucible" maxPoolSize="20" minPoolSize="5" driverSource="bundled"/>
     </database>
-    <snippet />
+    <snippet/>
 </config>
